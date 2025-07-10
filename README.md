@@ -96,6 +96,24 @@ CREATE TABLE donations (
     created_at TIMESTAMP DEFAULT CURRENT TIMESTAMP,
     PRIMARY KEY (id)
 );
+
+--Feedback Table
+CREATE TABLE feedback ( 
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, 
+    name VARCHAR(100), 
+    email VARCHAR(100), 
+    message VARCHAR(1000) 
+);
+
+--Manage Table
+CREATE TABLE Manage ( 
+  ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 
+  CATEGORY VARCHAR(50), 
+  PLACE VARCHAR(100), 
+  DONATION_DATE DATE 
+); 
+
+ 
 ```
 
 ## 👥 Test Accounts
@@ -113,7 +131,7 @@ CREATE TABLE donations (
 - **Access**: User Dashboard
 
 - **Username**: `iman`
-- **Password**: `d12345`
+- **Password**: `12345`
 - **Role**: donor
 - **Access**: User Dashboard
 
