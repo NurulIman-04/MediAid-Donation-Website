@@ -101,19 +101,19 @@ CREATE TABLE donations (
 ## 👥 Test Accounts
 
 ### Admin Account
-- **Username**: `admin`
-- **Password**: `admin123`
+- **Username**: `admin1`
+- **Password**: `12345`
 - **Role**: admin
 - **Access**: Admin Dashboard
 
 ### Donor Accounts
-- **Username**: `donor1`
-- **Password**: `donor123`
+- **Username**: `ali`
+- **Password**: `12345`
 - **Role**: donor
 - **Access**: User Dashboard
 
-- **Username**: `donor2`
-- **Password**: `donor123`
+- **Username**: `iman`
+- **Password**: `d12345`
 - **Role**: donor
 - **Access**: User Dashboard
 
@@ -169,6 +169,8 @@ The database connection is configured in the servlets:
    ```sql
    DROP TABLE users;
    DROP TABLE donations;
+   DROP TABLE MANAGE;
+   DROP TABLE FEEDBACK;
    ```
    Then run setup script again.
 
