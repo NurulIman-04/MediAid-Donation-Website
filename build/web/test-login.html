@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediAid Login Test</title>
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 20px;
+            background: #e6f0fa;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2C3E50;
+            text-align: center;
+        }
+        .test-links {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        .test-link {
+            padding: 15px 30px;
+            background: #4DA7DB;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .test-link:hover {
+            background: #2C3E50;
+        }
+        .info-box {
+            background: #F0FAFD;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4DA7DB;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>MediAid Login System Test</h1>
+        
+        <div class="info-box">
+            <h3>Test Instructions:</h3>
+            <ol>
+                <li>Click "Test Login Page" to see the enhanced login interface</li>
+                <li>Try registering a new account with different roles</li>
+                <li>Test login with the provided test accounts</li>
+                <li>Verify error handling and form validation</li>
+            </ol>
+        </div>
+
+        <div class="test-links">
+            <a href="login.jsp" class="test-link">Test Login Page</a>
+            <a href="user/index.jsp" class="test-link">User Dashboard</a>
+            <a href="Dashboard.jsp" class="test-link">Admin Dashboard</a>
+        </div>
+
+        <div class="info-box">
+            <h3>Test Accounts:</h3>
+            <p><strong>Admin:</strong> username: admin, password: admin123</p>
+            <p><strong>Donor 1:</strong> username: donor1, password: donor123</p>
+            <p><strong>Donor 2:</strong> username: donor2, password: donor123</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Features to Test:</h3>
+            <ul>
+                <li>Toggle between Login and Register forms</li>
+                <li>Role selection (Donor/Admin)</li>
+                <li>Form validation (password confirmation)</li>
+                <li>Error message display</li>
+                <li>Success message display</li>
+                <li>Responsive design on mobile</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

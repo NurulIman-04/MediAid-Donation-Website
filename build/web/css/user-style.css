@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+  /* Remove or comment out the image */
+  /* background-image: url('../images/MediAid.png'); */
+  background-color: #e6f0fa; /* light blue */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: rgba(245, 251, 255, 0.95); /* Light blue overlay */
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2C3E50; /* Deep blue-gray */
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #4DA7DB; /* Soft blue on hover */
+}
+
+.title {
+  font-size: 2.5em;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card {
+  background-color: #F0FAFD; /* Light blue card */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.summary-box {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.progress-container {
+  background-color: #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fill {
+  width: 50%;
+  background-color: #28a745; /* Green for success */
+  padding: 12px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  animation: fill 1s ease-in-out forwards;
+}
+
+@keyframes fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.donate-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #f4b400; /* Gold button */
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #c48800;
+}
+
+/* ✅ New: Success Message Box */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
